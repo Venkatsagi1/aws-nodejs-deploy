@@ -5,7 +5,16 @@ app.get('/api/get', (req, res) => {
     res.send('Hello,Back to NODEJS');
 }   );
 
+app.get('/api/get2', (req, res) => {
+    res.send({
+        user:{
+        name: "venkat",
+        role: "devops Engineer" 
+        }
+        
+    }); 
 
+    })
 
 
 app.listen(8000,     () => {        
